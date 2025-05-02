@@ -1,23 +1,22 @@
 def calculator():
-    print("simple Calculator")
-    
+    print("simpe Caculator")
     num1=float(input("enter first number:"))
-    op=input("choose operation(+,-,*,/):"))
+    op=input("choose operation(=,-,*,/):")
     num2=float(input("enter second number:"))
-    
     if op=='+':
-        print("result:",num1+num2)
+        print("result",num1+num2)
     elif op=='-':
-        print("result:",num1-num2)
+        print("result",num1-num2)
     elif op=='*':
-        print("result:",num1*num2)
-    if op=='/':
-       if num2!=0:
-           print("result:",num1/num2)
-       else:
-          print("error:division by sero!")
-   else:
-          print("invalid operation")
+        print("result",num1*num2)
+    elif op=='/':
+        if num2!=0:
+            print("result:",num1/num2)
+        else:
+            print("error:division by zero!")
+    else:
+        print("invalid operation!")
+calculator()
 
 
 
